@@ -149,6 +149,7 @@
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CartItemController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\MerchantController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -157,6 +158,7 @@
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataObjects\Cart.cs" />
+    <Compile Include="DataObjects\CartItem.cs" />
     <Compile Include="DataObjects\Customer.cs" />
     <Compile Include="DataObjects\Merchant.cs" />
     <Compile Include="DataObjects\Order.cs" />
@@ -209,6 +211,10 @@
     <Compile Include="Migrations\201703021835477_AfterRelationship.cs" />
     <Compile Include="Migrations\201703021835477_AfterRelationship.Designer.cs">
       <DependentUpon>201703021835477_AfterRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703021911438_CartItemAdded.cs" />
+    <Compile Include="Migrations\201703021911438_CartItemAdded.Designer.cs">
+      <DependentUpon>201703021911438_CartItemAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\steamironContext.cs" />
@@ -266,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703021835477_AfterRelationship.resx">
       <DependentUpon>201703021835477_AfterRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021911438_CartItemAdded.resx">
+      <DependentUpon>201703021911438_CartItemAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

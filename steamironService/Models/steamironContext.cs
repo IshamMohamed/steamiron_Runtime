@@ -28,6 +28,7 @@ namespace steamironService.Models
         public DbSet<Merchant> Merchants { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<ProductItem> ProductItems { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

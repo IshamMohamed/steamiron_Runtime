@@ -14,8 +14,7 @@ namespace steamironService.DataObjects
 
         [ForeignKey("MerchantId")]
         public Merchant Merchant { get; set; }
-        public virtual ICollection<ProductItem> Product { get; set; }
-        public int Count { get; set; }
+        public virtual ICollection<CartItem> CartItem { get; set; }
 
         #region Relationships
         public string CustomerId { get; set; }
