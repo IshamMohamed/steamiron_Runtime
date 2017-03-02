@@ -1,6 +1,7 @@
 ﻿using Microsoft.Azure.Mobile.Server;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,12 +9,23 @@ namespace steamironService.DataObjects
 {
     public class Order : EntityData
     {
+        [ForeignKey("CartId")]
         public Cart Cart { get; set; }
+
+        [ForeignKey("CustomerId")]
         public Customer Customer { get; set; }
+
+        [ForeignKey("MerchantId")]
         public Merchant Merchant { get; set; }
         public string DeliveryAddress { get; set; }
         public double AmountToBePaid { get; set; }
         public OrderStatus OrderStatus { get; set; }
+
+        #region Relationships
+        public string CustomerId { get; set; }
+        public string MerchantId { get; set; }
+        public string CartId { get; set; }
+        #endregion
     }
 
     public enum OrderStatus
