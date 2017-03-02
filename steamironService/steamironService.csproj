@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201703021911438_CartItemAdded.Designer.cs">
       <DependentUpon>201703021911438_CartItemAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703021946404_changed order.cs" />
+    <Compile Include="Migrations\201703021946404_changed order.Designer.cs">
+      <DependentUpon>201703021946404_changed order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\steamironContext.cs" />
     <Compile Include="Startup.cs" />
@@ -275,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703021911438_CartItemAdded.resx">
       <DependentUpon>201703021911438_CartItemAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021946404_changed order.resx">
+      <DependentUpon>201703021946404_changed order.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

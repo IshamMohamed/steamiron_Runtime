@@ -12,18 +12,11 @@ namespace steamironService.DataObjects
         [ForeignKey("CartId")]
         public Cart Cart { get; set; }
 
-        [ForeignKey("CustomerId")]
-        public Customer Customer { get; set; }
-
-        [ForeignKey("MerchantId")]
-        public Merchant Merchant { get; set; }
         public string DeliveryAddress { get; set; }
         public double AmountToBePaid { get; set; }
         public OrderStatus OrderStatus { get; set; }
 
         #region Relationships
-        public string CustomerId { get; set; }
-        public string MerchantId { get; set; }
         public string CartId { get; set; }
         #endregion
     }
