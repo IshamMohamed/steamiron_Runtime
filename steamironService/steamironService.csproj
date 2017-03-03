@@ -220,6 +220,10 @@
     <Compile Include="Migrations\201703021946404_changed order.Designer.cs">
       <DependentUpon>201703021946404_changed order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703031707255_seed merchant table.cs" />
+    <Compile Include="Migrations\201703031707255_seed merchant table.Designer.cs">
+      <DependentUpon>201703031707255_seed merchant table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\steamironContext.cs" />
     <Compile Include="Startup.cs" />
@@ -282,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703021946404_changed order.resx">
       <DependentUpon>201703021946404_changed order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703031707255_seed merchant table.resx">
+      <DependentUpon>201703031707255_seed merchant table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
